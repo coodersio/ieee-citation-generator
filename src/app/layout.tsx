@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter } from "next/font/google";
 import { Theme } from "@radix-ui/themes";
+import Script from "next/script";
 import "@radix-ui/themes/styles.css";
 import "./globals.css";
 
@@ -36,6 +37,20 @@ export default function RootLayout({
         >
           {children}
         </Theme>
+
+        {/* Google Analytics */}
+        <Script
+          src="https://www.googletagmanager.com/gtag/js?id=G-FTV7T5GSME"
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-FTV7T5GSME');
+          `}
+        </Script>
       </body>
     </html>
   );

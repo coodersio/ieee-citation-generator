@@ -15,7 +15,7 @@ import HeroSection from '@/components/HeroSection';
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: "IEEE Citation Generator - Free Online Academic Citation Tool",
+  title: "IEEE Citation Generator - Free Online Tool",
   description: "Generate perfect IEEE format citations for books, journals, conferences, websites & more. Free online tool with automatic search & formatting.",
   alternates: {
     canonical: "https://ieeecitationgenerator.com"

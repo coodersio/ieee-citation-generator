@@ -175,7 +175,7 @@ export default async function TypePage({ params }: PageProps) {
                                         {tool.description}
                                     </Text>
                                     <Button asChild size="2" variant="soft" className="w-full">
-                                        <Link href={tool.href} title={`Use ${tool.name} Tool`}>
+                                        <Link href={tool.href} title={`Use ${tool.title} Tool`}>
                                             Use Tool
                                         </Link>
                                     </Button>

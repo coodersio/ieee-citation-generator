@@ -6,6 +6,6 @@ export default function robots(): MetadataRoute.Robots {
             userAgent: '*',
             allow: '/',
         },
-        sitemap: 'https://ieeecitationgenerator.com/sitemap.xml',
+        sitemap: 'https://ieeecitationgenerator.xyz/sitemap.xml',
     };
 }

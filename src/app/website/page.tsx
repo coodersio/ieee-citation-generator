@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: 'Website IEEE Citation Generator - Free Online Tool',
     description: 'Generate perfect IEEE format citations for websites & web pages instantly. Simply paste any URL to create accurate IEEE citations. Free online tool.',
     alternates: {
-        canonical: 'https://ieeecitationgenerator.com/website'
+        canonical: 'https://ieeecitationgenerator.xyz/website'
     }
 };
 

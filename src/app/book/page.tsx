@@ -8,7 +8,7 @@ export const metadata: Metadata = {
     title: 'Book IEEE Citation Generator - Free Online Tool',
     description: 'Generate perfect IEEE format citations for books & textbooks. Search by ISBN, author, or title for accurate citations. Free online tool.',
     alternates: {
-        canonical: 'https://ieeecitationgenerator.com/book'
+        canonical: 'https://ieeecitationgenerator.xyz/book'
     }
 };
 

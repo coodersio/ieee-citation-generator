@@ -6,7 +6,7 @@ export const metadata: Metadata = {
     title: 'Conference IEEE Citation Generator - Free Online Tool',
     description: 'Generate perfect IEEE format citations for conference papers & proceedings. Search by title, conference name, or DOI for accurate citations. Free tool.',
     alternates: {
-        canonical: 'https://ieeecitationgenerator.com/conference'
+        canonical: 'https://ieeecitationgenerator.xyz/conference'
     }
 };
 

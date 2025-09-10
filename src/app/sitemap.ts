@@ -1,7 +1,7 @@
 import { MetadataRoute } from 'next';
 
 export default function sitemap(): MetadataRoute.Sitemap {
-    const baseUrl = 'https://ieeecitationgenerator.com';
+    const baseUrl = 'https://ieeecitationgenerator.xyz';
 
     const staticPages = [
         {
@@ -15,12 +15,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
             lastModified: new Date(),
             changeFrequency: 'monthly' as const,
             priority: 0.7,
-        },
-        {
-            url: `${baseUrl}/about`,
-            lastModified: new Date(),
-            changeFrequency: 'yearly' as const,
-            priority: 0.4,
         },
     ];
 
@@ -64,14 +58,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
         }
     }
 
-    // Special pages
+    // Special pages - only include pages that actually exist
     const specialPages = [
         { path: '/convert', priority: 0.7 },
         { path: '/doi', priority: 0.8 },
         { path: '/pdf', priority: 0.8 },
         { path: '/bibtex', priority: 0.8 },
-        { path: '/text', priority: 0.7 },
-        { path: '/latex', priority: 0.7 },
     ].map(page => ({
         url: `${baseUrl}${page.path}`,
         lastModified: new Date(),

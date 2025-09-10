@@ -180,13 +180,13 @@ export default function Home() {
         </Box>
 
         {/* Content Ad */}
-        <Box className="text-center mb-16 sm:mb-20">
+        {/* <Box className="text-center mb-16 sm:mb-20">
           <Card className="p-4 sm:p-6 bg-gray-50/50 border-dashed border-2 border-gray-200 rounded-xl">
-            {/* <Text size={{ initial: "2", sm: "3" }} className="text-gray-500">
+            <Text size={{ initial: "2", sm: "3" }} className="text-gray-500">
               Advertisement Space (336x280)
-            </Text> */}
+            </Text>
           </Card>
-        </Box>
+        </Box> */}
 
         {/* Input Methods */}
         <Box className="mb-16 sm:mb-20">
@@ -369,24 +369,24 @@ export default function Home() {
             </Box>
 
             {/* Sidebar Ad - Hidden on mobile */}
-            <Box className="hidden lg:block">
+            {/* <Box className="hidden lg:block">
               <Card className="p-4 lg:p-6 bg-gray-50/50 border-dashed border-2 border-gray-200 rounded-xl h-64 flex items-center justify-center sticky top-24">
                 <Text size="3" className="text-gray-500 text-center">
                   Advertisement Space<br />(300x250)
                 </Text>
               </Card>
-            </Box>
+            </Box> */}
           </Grid>
         </Box>
 
         {/* Bottom Ad */}
-        <Box className="text-center">
+        {/* <Box className="text-center">
           <Card className="p-6 bg-gray-50/50 border-dashed border-2 border-gray-200 rounded-xl">
-            {/* <Text size="3" className="text-gray-500">
+            <Text size="3" className="text-gray-500">
               Advertisement Space (728x90)
-            </Text> */}
+            </Text>
           </Card>
-        </Box>
+        </Box> */}
       </Container>
     </PageLayout>
   );

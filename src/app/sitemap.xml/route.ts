@@ -82,19 +82,18 @@ function generateSitemap(): MetadataRoute.Sitemap {
 
 export async function GET() {
     const sitemap = generateSitemap();
-    
+
     const xml = `<?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
 ${sitemap
-    .map(
-        (item) => `  <url>
+            .map(
+                (item) => `  <url>
     <loc>${item.url}</loc>
-    <lastmod>${item.lastModified.toISOString()}</lastmod>
+    <lastmod>${item.lastModified instanceof Date ? item.lastModified.toISOString() : item.lastModified}</lastmod>
     <changefreq>${item.changeFrequency}</changefreq>
     <priority>${item.priority}</priority>
-  </url>`
-    )
-    .join('\n')}
+  </url>`)
+            .join('\n')}
 </urlset>`;
 
     return new Response(xml, {
